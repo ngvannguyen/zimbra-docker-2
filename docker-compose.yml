@@ -8,7 +8,7 @@ networks:
 services:
   zimbra:
     container_name: zimbra
-    hostname: mail.example.net
+    hostname: mail.seatester.vn
     build:
       context: ./docker
     ports:
