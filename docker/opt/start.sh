@@ -127,12 +127,12 @@ zimbra_server_hostname="$HOSTNAME.$DOMAIN"
 INSTALL_PACKAGES="zimbra-core zimbra-ldap zimbra-logger zimbra-mta zimbra-snmp zimbra-store zimbra-apache zimbra-spell zimbra-memcached zimbra-proxy"
 EOF
 ##Install the Zimbra Collaboration ##
-echo "Downloading Zimbra Collaboration 8.8.15"
+echo "Downloading Zimbra Collaboration 10.1.6"
 ## https://www.zimbra.com/downloads/zimbra-collaboration-open-source/
-wget -O /opt/zimbra-install/zimbra-zcs-8.8.15.tar.gz https://files.zimbra.com/downloads/8.8.15_GA/zcs-8.8.15_GA_4179.UBUNTU20_64.20211118033954.tgz
+wget -O /opt/zimbra-install/zimbra-zcs-10.1.6.tar.gz https://github.com/maldua/zimbra-foss/releases/download/zimbra-foss-build-ubuntu-22.04/10.1.10.p3/zcs-10.1.10_GA_4200003.UBUNTU22_64.20251107221239.tgz
 
 echo "Extracting files from the archive"
-tar xzvf /opt/zimbra-install/zimbra-zcs-8.8.15.tar.gz -C /opt/zimbra-install/
+tar xzvf /opt/zimbra-install/zimbra-zcs-10.1.6.tar.gz -C /opt/zimbra-install/
 
 echo "Update package cache"
 apt update
